@@ -1,10 +1,10 @@
 {
-  "name": "botkit-middleware-watson",
+  "name": "botkit-middleware-watson-simple-example",
   "version": "1.1.0",
   "description": "A middleware for using Watson Conversation in a Botkit-powered bot.",
-  "main": "lib/middleware/index.js",
+  "main": "simple-bot-slack.js",
   "scripts": {
-    "start": "node lib/middleware/index.js",
+    "start": "simple-bot-slack.js",
     "test": "mocha test"
   },
   "repository": {
