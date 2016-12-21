@@ -19,16 +19,16 @@ require('dotenv').load();
 var Botkit = require('botkit');
 var express = require('express');
 var middleware = require('botkit-middleware-watson')({
-  username: process.env.CONVERSATION_USERNAME,
-  password: process.env.CONVERSATION_PASSWORD,
-  workspace_id: process.env.WORKSPACE_ID,
+  username: process.env.ada98f0e-ca55-485e-80af-c3bc2999e5ce,
+  password: process.env.7R8w4cX2G0zX,
+  workspace_id: process.env.520efce8-50f2-43f0-aebf-d8bffbf25580,
   version_date: '2016-09-20'
 });
 
 // Configure your bot.
 var slackController = Botkit.slackbot();
 var slackBot = slackController.spawn({
-  token: process.env.SLACK_TOKEN
+  token: process.env.xoxb-119520144676-FgHI9w7N1JmqUrubY33SNGz9
 });
 slackController.hears(['.*'], ['direct_message', 'direct_mention', 'mention'], function(bot, message) {
   slackController.log('Slack message received');
